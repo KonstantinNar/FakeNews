@@ -1,0 +1,17 @@
+.footer {
+    background-color: var(--text-main-color);
+}
+
+.footer__body {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__logo_img {
+    width: 80px;
+}
+
+.footer__text {
+    margin-top: 10px;
+    color: #FFF;
+}
