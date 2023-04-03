@@ -22,12 +22,12 @@ button:hover {
   stroke: var(--line-main-color);
 }
 
-.fa-heart .active {
+.active path {
   fill: var(--line-main-color);
   stroke-width: 0;
 }
 
-.fa-heart .active:hover {
+.active path:hover {
   stroke: var(--line-main-color);
   stroke-width: 40px;
 }

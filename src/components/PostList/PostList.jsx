@@ -3,21 +3,12 @@ import React, { useEffect, useState } from "react";
 import { Post } from "../Post/Post"
 import { Pag } from "../Pag/Pag";
 
-export const PostList = ({ post }) => {
-    const [card, setCard] = useState([]);
+export const PostList = ({ post, hendleDeletePost, userInfo, hendelChangeLike }) => {
     const [currentPage, setCurrentPage] = useState(1);
-    const [postPerPage] = useState(13);
 
-    useEffect(() => {
-        const getCard = () => {
-            setCard(post)
-        }
-        getCard()
-    })
-
-    const lastPostIndex = currentPage * postPerPage
-    const firstPostIndex = lastPostIndex - postPerPage
-    const currentPost = card.slice(firstPostIndex, lastPostIndex)
+    const lastPostIndex = currentPage * 13
+    const firstPostIndex = lastPostIndex - 13
+    const currentPost = post.slice(firstPostIndex, lastPostIndex)
 
     const componentDidMount = () => {
         return (
@@ -37,10 +28,10 @@ export const PostList = ({ post }) => {
             <div className="container">
                 <div className={s.postList__body}>
                     {currentPost.map((item) => {
-                        return <Post {...item} key={item.name} />
+                        return <Post item={item} {...item} key={item.name} hendleDeletePost={hendleDeletePost} userInfo={userInfo} hendelChangeLike={hendelChangeLike} />
                     })}
                 </div>
-                <Pag currentPage={currentPage} total={card.length} postPerPage={postPerPage} paginate={paginate} />
+                <Pag currentPage={currentPage} total={post.length} paginate={paginate} />
             </div>
         </div>
     )

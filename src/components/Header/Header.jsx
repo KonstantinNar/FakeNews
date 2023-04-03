@@ -4,7 +4,7 @@ import { Signup } from '../Signup/Signup';
 import logo from "./logo.svg"
 
 
-export const Header = () => {
+export const Header = ({ userInfo, hendleSetPost }) => {
     return (
         <header className={s.header}>
             <div className="container">
@@ -13,8 +13,8 @@ export const Header = () => {
                         <img className={s.header__logo_img} src={logo} alt="logo" />
                     </a>
                     <div className={s.header__button_container}>
-                        <Button />
-                        <Signup />
+                        <Button hendleSetPost={hendleSetPost} />
+                        <Signup userInfo={userInfo} />
                     </div>
                 </div>
             </div>

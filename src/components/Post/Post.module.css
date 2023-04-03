@@ -14,19 +14,12 @@
     align-items: center;
 }
 
-.post:first-child .post__like {
+.post:first-child .post__button {
     position: absolute;
     bottom: 39px;
     right: 15px;
-    font-size: 22px;
-}
-
-.post:first-child .post__trash {
-    position: absolute;
-    bottom: 39px;
-    right: 50px;
-    font-size: 22px;
-    color: var(--text-main-color);
+    gap: 15px;
+    display: flex;
 }
 
 .post:first-child .post__time {
@@ -41,19 +34,32 @@
     color: var(--line-main-color);
 }
 
-.post__like {
+.post__button {
     position: absolute;
     bottom: 7px;
     right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.post__like {
+    margin-left: -10px;
+    font-size: 22px;
+}
+
+.post__like_num {
     font-size: 22px;
 }
 
 .post__trash {
-    position: absolute;
-    bottom: 7px;
-    right: 50px;
     font-size: 22px;
     color: var(--text-main-color);
+}
+
+.post__trash_visible {
+    visibility: hidden;
 }
 
 .post .post__time {
