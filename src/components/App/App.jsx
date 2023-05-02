@@ -75,6 +75,8 @@ function App() {
     }
   }
 
+  // Тест
+
   useEffect(() => {
     const token = localStorage.getItem("token")
     if (token) {
