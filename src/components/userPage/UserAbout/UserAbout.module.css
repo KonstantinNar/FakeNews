@@ -1,0 +1,23 @@
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--line-main-color);
+}
+
+.error {
+    margin-top: 10px;
+    height: 1px;
+    color: var(--line-main-color);
+    margin-bottom: 20px;
+}
+
+.item__text {
+    margin-top: 10px;
+}
+
+.item__button {
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+}

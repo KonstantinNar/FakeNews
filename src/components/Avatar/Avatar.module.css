@@ -8,3 +8,7 @@
     font-size: 20px;
     font-weight: 500;
 }
+
+.signout {
+    color: var(--line-main-color);
+}

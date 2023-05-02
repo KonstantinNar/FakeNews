@@ -1,0 +1,112 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.form__lable {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__reset {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 20px 0;
+    cursor: pointer;
+    color: #919191;
+}
+
+.error {
+    margin-top: 10px;
+    height: 1px;
+    color: var(--line-main-color);
+}
+
+.form__text {
+    margin: 25px 0 20px;
+    color: #919191;
+    line-height: 17px;
+}
+
+.form__text_top {
+    color: #919191;
+    line-height: 17px;
+}
+
+.form__button_line {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__button {
+    background: var(--line-main-color);
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.form__button:hover {
+    background-color: #ff0000;
+    color: #FFF;
+}
+
+.form__button_reg {
+    color: var(--text-main-color);
+    border: 1px solid var(--text-main-color);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: 400ms all;
+}
+
+.form__button_reg:hover {
+    background-color: var(--line-main-color);
+    border: 1px solid var(--line-main-color);
+    color: #fff;
+    transition: 400ms all;
+}
+
+.form__button_login {
+    color: var(--text-main-color);
+    border: 1px solid var(--text-main-color);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: 400ms all;
+}
+
+.form__button_login:hover {
+    background-color: var(--line-main-color);
+    border: 1px solid var(--line-main-color);
+    color: #fff;
+    transition: 400ms all;
+}
+
+.form__eye {
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+}
+
+.form__eye:hover {
+    color: var(--line-main-color);
+}
+
+.form__eye_signin {
+    right: 40px;
+    top: 219px;
+}
+
+.form__eye_signup {
+    right: 50px;
+    top: 219px;
+}
+
+.form__eye_reset {
+    right: 40px;
+    bottom: 121px;
+}

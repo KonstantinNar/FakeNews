@@ -1,0 +1,40 @@
+.notAuth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.auth {
+    background: var(--line-main-color);
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.auth:hover {
+    background-color: #ff0000;
+    color: #FFF;
+}
+
+.auth:visited {
+    color: #FFF;
+}
+
+.auth:link {
+    color: #FFF;
+}

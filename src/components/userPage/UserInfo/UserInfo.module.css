@@ -1,0 +1,39 @@
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--line-main-color);
+}
+
+.user__input {
+    cursor: default;
+}
+
+.avatar {
+    width: 300px;
+    margin-bottom: 40px;
+
+}
+
+.string {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.string__top {
+    margin-bottom: 40px;
+}
+
+.user__title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.user__input {
+    margin-top: 20px;
+    font-size: 16px;
+    outline: none;
+    caret-color: transparent;
+}

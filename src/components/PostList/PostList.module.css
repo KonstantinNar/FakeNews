@@ -1,3 +1,10 @@
+.postList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+}
+
 .postList__body {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;

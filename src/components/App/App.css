@@ -3,6 +3,12 @@
   max-width: 1200px;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 button {
   background: transparent;
   font-size: 17px;
@@ -10,6 +16,15 @@ button {
 
 button:hover {
   color: var(--line-main-color);
+}
+
+input {
+  border: 1px solid var(--line-add-color);
+  width: 370px;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
 .fa-heart path {
@@ -30,4 +45,45 @@ button:hover {
 .active path:hover {
   stroke: var(--line-main-color);
   stroke-width: 40px;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  border-color: var(--line-main-color);
+}
+
+.ant-pagination .ant-pagination-item-active:hover {
+  border-color: #f27f7f;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: var(--line-main-color);
+}
+
+.ant-pagination .ant-pagination-item-active a:hover {
+  color: #f27f7f;
+}
+
+.ant-pagination .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon {
+  color: var(--line-main-color);
+}
+
+.ant-pagination .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+  color: var(--line-main-color);
+}
+
+a:visited {
+  color: var(--text-main-color);
+}
+
+a:link {
+  color: var(--text-main-color);
+}
+
+#nav a.active {
+  font-weight: 500;
+  color: var(--text-main-color);
+}
+
+#nav a.active .fa-chevron-right path {
+  fill: var(--text-main-color);
 }

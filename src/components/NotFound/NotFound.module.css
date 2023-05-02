@@ -1,0 +1,30 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.num {
+    color: var(--line-main-color);
+    font-weight: 700;
+    font-size: 200px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.text__main {
+    cursor: pointer;
+    color: var(--line-main-color);
+    text-decoration: underline;
+}

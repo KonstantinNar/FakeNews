@@ -1,0 +1,17 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line-add-color);
+    gap: 30px;
+}
+
+.item {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.item:hover {
+    color: var(--line-main-color);
+}

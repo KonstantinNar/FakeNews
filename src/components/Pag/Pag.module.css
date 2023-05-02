@@ -1,4 +1,27 @@
-.Pag {
+.pag {
     text-align: center;
     margin-bottom: 40px;
+}
+
+ul .ant-pagination .ant-pagination-item-active {
+    border-color: red;
+}
+
+.colorPrimaryHover {
+    color: red;
+}
+
+.colorBorder {
+    color: red;
+
+}
+
+.colorPrimary {
+    color: red;
+
+}
+
+.colorPrimaryBorder {
+    color: red;
+
 }

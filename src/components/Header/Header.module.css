@@ -6,11 +6,24 @@
     border-bottom: 1px solid var(--line-add-color);
 }
 
+.header__logo_link {
+    cursor: pointer;
+}
+
 .header__logo_img {
     width: 80px;
 }
 
 .header__button_container {
     display: flex;
+    align-items: center;
     gap: 20px;
+}
+
+.signin__button {
+    font-size: 17px;
+}
+
+.signin__button:hover {
+    color: var(--line-main-color);
 }
