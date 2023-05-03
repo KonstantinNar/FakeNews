@@ -3,7 +3,7 @@ import { PostList } from '../PostList/PostList';
 import { api } from '../../utils/api';
 import { useEffect, useState } from 'react';
 import { OpenPost } from '../OpenPost/OpenPost';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation, } from 'react-router-dom';
 import { PostContext } from '../../context/PostContext';
 import { UserContext } from '../../context/UserContext';
 import { NotFound } from '../NotFound/NotFound';
@@ -25,7 +25,7 @@ function App() {
   const [post, setPost] = useState({})
   const [authModalActive, setAuthModalActive] = useState(false)
   const [authorization, setAuthorization] = useState(false)
-  const navigate = useNavigate()
+  const location = useLocation()
 
   const dayjs = require('dayjs')
 
@@ -75,22 +75,16 @@ function App() {
     }
   }
 
-  // Тест
-
   useEffect(() => {
     const token = localStorage.getItem("token")
-    if (token) {
+    if (token && location.pathname === '/') {
+      Promise.all([api.getPosts(), api.getUserInfo()]).then(([postsData, userData]) => {
+        setPosts(postsData)
+        setCurrentUser(userData)
+      })
       setAuthorization(true)
     }
-  }, [navigate])
-
-  useEffect(() => {
-    console.log(authorization);
-    Promise.all([api.getPosts(), api.getUserInfo()]).then(([postsData, userData]) => {
-      setPosts(postsData)
-      setCurrentUser(userData)
-    })
-  }, [authorization])
+  }, [location])
 
   const postContext = { posts, setPosts, handleDeletePost, handleChangeLike, handleSetPost, setSort, dayjs }
   const userContext = { userInfo: currentUser, setUserInfo: setCurrentUser, authModalActive, setAuthModalActive, setAuthorization, authorization }
