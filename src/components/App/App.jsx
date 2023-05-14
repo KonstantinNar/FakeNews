@@ -50,7 +50,9 @@ function App() {
 
   const handleDeletePost = (id) => {
     api.deletePost(id).then((deletePost) => {
-      posts.forEach((item, index) => {
+      const arr = structuredClone(posts)
+      // const arr = [...posts]
+      arr.forEach((item, index) => {
         if (item._id === deletePost._id) {
           posts.splice(index, 1)
           return
